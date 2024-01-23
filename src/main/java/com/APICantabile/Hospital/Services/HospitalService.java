@@ -1,6 +1,6 @@
-package com.APICantabile.Hospital.services;
+package com.APICantabile.Hospital.Services;
 
-import com.APICantabile.Hospital.models.Hospital;
+import com.APICantabile.Hospital.Models.Hospital;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

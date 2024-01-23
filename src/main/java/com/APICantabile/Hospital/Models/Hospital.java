@@ -1,4 +1,4 @@
-package com.APICantabile.Hospital.models;
+package com.APICantabile.Hospital.Models;
 
 public class Hospital {
     private int id;
