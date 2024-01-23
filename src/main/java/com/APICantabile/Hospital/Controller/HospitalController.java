@@ -1,6 +1,6 @@
-package com.APICantabile.Hospital.controller;
-import com.APICantabile.Hospital.models.Hospital;
-import com.APICantabile.Hospital.services.HospitalService;
+package com.APICantabile.Hospital.Controller;
+import com.APICantabile.Hospital.Models.Hospital;
+import com.APICantabile.Hospital.Services.HospitalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
