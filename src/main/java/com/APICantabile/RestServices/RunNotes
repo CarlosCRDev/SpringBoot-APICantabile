@@ -1,0 +1,1 @@
+Este proyecto en el que se consume una api de google para probar el RestTemplate, unicamente utiliza las librerias de json y springweb en el archivo pom.
