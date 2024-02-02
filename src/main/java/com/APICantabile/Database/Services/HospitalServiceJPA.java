@@ -18,4 +18,13 @@ public class HospitalServiceJPA {
         hospitalRepository.findAll().forEach(hospitalList::add);
         return hospitalList;
     }
+
+    public Hospital getOneHospital(int id){
+        return hospitalRepository.findById(id).get();
+    }
+
+    public Hospital saveHospital(Hospital hospital){
+        hospitalRepository.save(hospital);
+        return hospitalRepository.findById(hospital.getId()).get();
+    }
 }

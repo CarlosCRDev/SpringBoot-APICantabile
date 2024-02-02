@@ -2,20 +2,27 @@ package com.APICantabile.Database.Entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+import java.io.Serializable;
 
 @Entity
-public class Hospital {
+@Table(name = "Hospitals")
+public class Hospital implements Serializable {
     @Id
     private int id;
     private String name;
     private String city;
-    private double rating;
+    private double raiting;
 
-    public Hospital(int id, String name, String city, double rating) {
+    public Hospital() {
+    }
+
+    public Hospital(int id, String name, String city, double raiting) {
         this.id = id;
         this.name = name;
         this.city = city;
-        this.rating = rating;
+        this.raiting = raiting;
     }
 
     public int getId() {
@@ -42,11 +49,11 @@ public class Hospital {
         this.city = city;
     }
 
-    public double getRating() {
-        return rating;
+    public double getRaiting() {
+        return raiting;
     }
 
-    public void setRating(double rating) {
-        this.rating = rating;
+    public void setRaiting(double rating) {
+        this.raiting = rating;
     }
 }
