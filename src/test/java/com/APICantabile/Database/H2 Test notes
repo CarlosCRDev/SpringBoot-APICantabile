@@ -1,0 +1,4 @@
+Para que los test y la base de datos h2 funcionen, unicamente se necesitan las clases test y los archivos:
+  data.sql
+  application.properties
+y las dependencias de h2 y junit en el pom
