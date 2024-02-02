@@ -3,9 +3,7 @@ package com.APICantabile.Database.Controllers;
 import com.APICantabile.Database.Entities.Hospital;
 import com.APICantabile.Database.Services.HospitalServiceJPA;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,5 +16,15 @@ public class HospitalControllerJPA {
     @RequestMapping(value = "/hospitals", method = RequestMethod.GET)
     public List<Hospital> getAllHospitals()throws Exception{
         return this.hospitalService2.getAllHospitals();
+    }
+
+    @RequestMapping(value = "/hospitals/{id}", method = RequestMethod.GET)
+    public Hospital getOneHospital(@PathVariable int id)throws Exception{
+        return this.hospitalService2.getOneHospital(id);
+    }
+
+    @RequestMapping(value = "/hospitals", method = RequestMethod.POST)
+    public Hospital saveHospital(@RequestBody Hospital hospital)throws Exception{
+        return this.hospitalService2.saveHospital(hospital);
     }
 }
